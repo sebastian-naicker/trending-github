@@ -1,6 +1,6 @@
 import React from "react"
 
-const Developers: React.FC = (props) => {
+const Developers: React.FC = () => {
   return <div>Devs</div>
 }
 

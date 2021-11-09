@@ -4,12 +4,13 @@ import ReactDOM from "react-dom"
 import Developers from "@pages/Developers"
 import Repositories from "@pages/Repositories"
 import reportWebVitals from "./reportWebVitals"
+
 import "./index.scss"
 
 ReactDOM.render(
   <Router>
-    <Route path="/" component={Repositories} />
-    <Route path="/developers" component={Developers} />
+    <Route path="/" exact component={Repositories} />
+    <Route path="/developers" exact component={Developers} />
   </Router>,
   document.getElementById("root")
 )
