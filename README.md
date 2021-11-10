@@ -1,3 +1,5 @@
+![CI/CD](https://github.com/sebastian-naicker/trending-github/actions/workflows/ci-cd.yml/badge.svg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
