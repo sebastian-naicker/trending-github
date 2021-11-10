@@ -1,4 +1,5 @@
 ![CI/CD](https://github.com/sebastian-naicker/trending-github/actions/workflows/ci-cd.yml/badge.svg)
+[![codecov](https://codecov.io/gh/sebastian-naicker/trending-github/branch/main/graph/badge.svg?token=QKZVS3C74S)](https://codecov.io/gh/sebastian-naicker/trending-github)
 
 # Getting Started with Create React App
 
