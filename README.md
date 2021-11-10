@@ -1,7 +1,17 @@
 ![CI/CD](https://github.com/sebastian-naicker/trending-github/actions/workflows/ci-cd.yml/badge.svg)
 [![codecov](https://codecov.io/gh/sebastian-naicker/trending-github/branch/main/graph/badge.svg?token=QKZVS3C74S)](https://codecov.io/gh/sebastian-naicker/trending-github)
 
-# Getting Started with Create React App
+# Github Trending
+This app is built with the following technologies:
+ - Typescript
+ - React Router
+ - React Query
+ - Jest & React Testing Library - For Unit tests
+ - Cypress - For automated E2E testing
+ - Github Actions for CI/CD pipelines
+ - Prettier for linting
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -9,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -17,12 +27,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `npm run test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
