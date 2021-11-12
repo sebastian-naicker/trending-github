@@ -1,5 +1,5 @@
 ![CI/CD](https://github.com/sebastian-naicker/trending-github/actions/workflows/ci-cd.yml/badge.svg)
-[![codecov](https://codecov.io/gh/sebastian-naicker/trending-github/branch/main/graph/badge.svg?token=QKZVS3C74S)](https://codecov.io/gh/sebastian-naicker/trending-github)
+[![coverage](https://codecov.io/gh/sebastian-naicker/trending-github/branch/main/graph/badge.svg?token=QKZVS3C74S)](https://codecov.io/gh/sebastian-naicker/trending-github)
 
 # Github Trending
 This app is built with the following technologies:
@@ -57,3 +57,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Troubleshooting
+
+There is currently 1 known issue when attempting to run this app on a new M1 Mac with node `v12.x` & `v14.x`
+
+If you run into a `process allocation issue` you simply need to update node to v16.x and the app should build and run fine.
