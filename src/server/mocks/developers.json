@@ -4,7 +4,7 @@
     "username": "testuser1",
     "name": "Test User",
     "url": "https://example.com/testuser1",
-    "avatar": "https://example.com/testuser1/avatar",
+    "avatar": "https://avatars.githubusercontent.com/u/4704023?v=4",
     "since": "daily",
     "popularRepository": {
       "repositoryName": "testrepo",
@@ -13,11 +13,11 @@
     }
   },
   {
-    "rank": 1,
+    "rank": 2,
     "username": "testuser2",
     "name": "Test User",
     "url": "https://example.com/testuser2",
-    "avatar": "https://example.com/testuser2/avatar",
+    "avatar": "https://avatars.githubusercontent.com/u/4704023?v=4",
     "since": "daily",
     "popularRepository": {
       "repositoryName": "testrepo2",

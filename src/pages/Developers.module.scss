@@ -1,0 +1,48 @@
+@import "src/scss/_colours";
+
+.developers {
+  margin: 40px 20px;
+}
+
+.list-body {
+  border: solid 1px $brown-light;
+  border-radius: 8px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  padding: 15px;
+  border-bottom: solid 1px $brown-light;
+}
+
+.list-item-user {
+  display: flex;
+}
+
+.avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+
+  &__name, &__username {
+    margin: 0;
+  }
+}

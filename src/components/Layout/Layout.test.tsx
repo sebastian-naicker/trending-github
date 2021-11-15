@@ -11,11 +11,6 @@ describe('Layout', function () {
     expect(getByTestId('header')).toBeInTheDocument()
   })
 
-  it('should contain Footer', function () {
-    const { getByTestId } = render(<Layout />)
-    expect(getByTestId('footer')).toBeInTheDocument()
-  })
-
   it('should render content', function () {
     const { getByText } = render(
       <Layout>

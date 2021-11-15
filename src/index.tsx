@@ -8,15 +8,18 @@ import Repositories from '@pages/Repositories'
 import reportWebVitals from './reportWebVitals'
 
 import './index.scss'
+import Layout from '@components/Layout/Layout'
 
 const queryClient = new QueryClient()
 
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>
-    <Router>
-      <Route path="/" exact component={Repositories} />
-      <Route path="/developers" exact component={Developers} />
-    </Router>
+    <Layout>
+      <Router>
+        <Route path="/" exact component={Repositories} />
+        <Route path="/developers" exact component={Developers} />
+      </Router>
+    </Layout>
   </QueryClientProvider>,
   document.getElementById('root')
 )

@@ -1,8 +1,4 @@
-// Colour Palette
-$brown-dark: #2D2424;
-$brown-light: #5C3D2E;
-$accent-main: #B85C38;
-$accent-alt: #E0C097;
+@import "scss/_colours.scss";
 
 body {
   margin: 0;
@@ -11,4 +7,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $brown-dark;
+  position: relative;
+}
+
+#root {
+  min-height: 100vh;
+  color: $white;
 }
