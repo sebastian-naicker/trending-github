@@ -1,0 +1,42 @@
+[
+  {
+    "rank": 1,
+    "username": "testuser1",
+    "repositoryName": "testrepo",
+    "url": "https://example.com/testuser1/testrepo",
+    "description": "Trainable repo used for mock data",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "totalStars": 331,
+    "forks": 32,
+    "starsSince": 64,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "builtbytestuser1",
+        "url": "https://example.com/builtbytestuser1",
+        "avatar": "https://example.com/builtbytestuser1/avatar"
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "username": "testuser2",
+    "repositoryName": "testrepo2",
+    "url": "https://example.com/testuser2/testrepo2",
+    "description": "Trainable repo used for mock data",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "totalStars": 20,
+    "forks": 12,
+    "starsSince": 2,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "builtbytestuser2",
+        "url": "https://example.com/builtbytestuser2",
+        "avatar": "https://example.com/builtbytestuser2/avatar"
+      }
+    ]
+  }
+]

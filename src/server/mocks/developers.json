@@ -1,0 +1,28 @@
+[
+  {
+    "rank": 1,
+    "username": "testuser1",
+    "name": "Test User",
+    "url": "https://example.com/testuser1",
+    "avatar": "https://example.com/testuser1/avatar",
+    "since": "daily",
+    "popularRepository": {
+      "repositoryName": "testrepo",
+      "description": null,
+      "url": "https://example.com/testuser1/testrepo"
+    }
+  },
+  {
+    "rank": 1,
+    "username": "testuser2",
+    "name": "Test User",
+    "url": "https://example.com/testuser2",
+    "avatar": "https://example.com/testuser2/avatar",
+    "since": "daily",
+    "popularRepository": {
+      "repositoryName": "testrepo2",
+      "description": null,
+      "url": "https://example.com/testuser2/testrepo2"
+    }
+  }
+]
