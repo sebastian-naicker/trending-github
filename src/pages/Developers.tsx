@@ -11,7 +11,7 @@ const Developers: React.FC = () => {
     return <div>An error has occurred + {error.message}</div>
   }
 
-  return <div>{data}</div>
+  return <div>{JSON.stringify(data)}</div>
 }
 
 export default Developers
