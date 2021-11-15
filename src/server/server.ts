@@ -1,7 +1,8 @@
 import express from 'express'
+import repositoriesMock from './mocks/repositories.json'
+import developersMock from './mocks/developers.json'
 
 const app = express()
-
 const baseUrl = '/api'
 
 app.get(`${baseUrl}/ready`, function (req, res) {
@@ -11,7 +12,12 @@ app.get(`${baseUrl}/ready`, function (req, res) {
   })
 })
 
-app.get(`${baseUrl}/repositories`)
-app.get(`${baseUrl}/developers`)
+app.get(`${baseUrl}/repositories`, function (req, res) {
+  res.send(repositoriesMock)
+})
+
+app.get(`${baseUrl}/developers`, function (req, res) {
+  res.send(developersMock)
+})
 
 export default app
