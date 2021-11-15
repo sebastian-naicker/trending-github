@@ -2,11 +2,16 @@ import express from 'express'
 
 const app = express()
 
-app.get('/', function (req, res) {
+const baseUrl = '/api'
+
+app.get(`${baseUrl}/ready`, function (req, res) {
   res.send({
     status: 200,
     message: 'ready',
   })
 })
+
+app.get(`${baseUrl}/repositories`)
+app.get(`${baseUrl}/developers`)
 
 export default app

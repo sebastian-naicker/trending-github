@@ -1,10 +1,10 @@
 import app from './server'
 import supertest from 'supertest'
 
-describe('GET /', function () {
+describe('GET /api/ready', function () {
   it('should return a ready status', async function () {
     await supertest(app)
-      .get('/')
+      .get('/api/ready')
       .expect(200)
       .then((response) => {
         // Check data
