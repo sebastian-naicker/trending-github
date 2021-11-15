@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import app from './server'
 
 app.listen(3001, function () {
