@@ -1,5 +1,6 @@
 import React from 'react'
 import cx from 'classnames'
+import { NavLink } from 'react-router-dom'
 import useFetchDevelopers from '../hooks/useFetchDevelopers'
 import { ReactComponent as PopularIcon } from './popular.svg'
 import { ReactComponent as RepoIcon } from './repo.svg'
@@ -20,8 +21,22 @@ const Developers: React.FC = () => {
   return (
     <div className={styles['developers']}>
       <div className={styles['table']}>
-        <div className={styles['list-header']}></div>
-        <div className={styles['list-body']}>
+        <div className={styles['table-header']}>
+          <nav className={styles['subnav']}>
+            <NavLink to="/" exact className={styles['subnav-button']} activeClassName={styles['subnav-active']}>
+              Repositories
+            </NavLink>
+            <NavLink
+              to="/developers"
+              exact
+              className={styles['subnav-button']}
+              activeClassName={styles['subnav-active']}
+            >
+              Developers
+            </NavLink>
+          </nav>
+        </div>
+        <div className={styles['table-body']}>
           <ul className={styles['list']}>
             {data.map((item: any) => {
               return (

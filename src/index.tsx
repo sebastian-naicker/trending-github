@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import ReactDOM from 'react-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import Developers from '@pages/Developers'
@@ -16,8 +16,10 @@ ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <Layout>
       <Router>
-        <Route path="/" exact component={Repositories} />
-        <Route path="/developers" exact component={Developers} />
+        <Switch>
+          <Route path="/" exact component={Repositories} />
+          <Route path="/developers" exact component={Developers} />
+        </Switch>
       </Router>
     </Layout>
   </QueryClientProvider>,
