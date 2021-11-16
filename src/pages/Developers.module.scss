@@ -2,10 +2,16 @@
 
 .developers {
   margin: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 1012px;
 }
 
 .list-body {
-  border: solid 1px $brown-light;
+  border: solid 1px $border;
   border-radius: 8px;
 }
 
@@ -18,19 +24,28 @@
 .list-item {
   display: flex;
   padding: 15px;
-  border-bottom: solid 1px $brown-light;
+  border-bottom: solid 1px $border;
+}
+
+.list-item-rank {
+  font-size: 12px;
+  color: $light;
 }
 
 .list-item-user {
   display: flex;
+  margin: 0 15px;
+  flex-basis: 40%;
+  max-width: 280px;
 }
 
 .avatar {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   overflow: hidden;
+  margin-right: 15px;
 
   & > img {
     width: 100%;
@@ -41,8 +56,59 @@
 .user-info {
   display: flex;
   flex-direction: column;
+  flex-basis: 35%;
 
   &__name, &__username {
     margin: 0;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+  }
+
+  &__username > a {
+    color: $light !important;
+    font-weight: 600 !important;
+  }
+
+  &__username:hover > a {
+    color: $accent !important;
+  }
+}
+
+.list-item-repo {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+}
+
+.repo-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.repo-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $light;
+}
+
+.repo-description {
+  font-size: 12px;
+  color: $light;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 5px;
+
+  &__popular {
+    fill: $accent-alt;
+  }
+
+  &__repo {
+    fill: $light;
   }
 }

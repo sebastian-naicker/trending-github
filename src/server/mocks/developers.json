@@ -8,7 +8,7 @@
     "since": "daily",
     "popularRepository": {
       "repositoryName": "testrepo",
-      "description": null,
+      "description": "Some description here.",
       "url": "https://example.com/testuser1/testrepo"
     }
   },
@@ -21,7 +21,7 @@
     "since": "daily",
     "popularRepository": {
       "repositoryName": "testrepo2",
-      "description": null,
+      "description": "some very long description here, used for purely for testing and describing what a description is supposed to look like!?",
       "url": "https://example.com/testuser2/testrepo2"
     }
   }

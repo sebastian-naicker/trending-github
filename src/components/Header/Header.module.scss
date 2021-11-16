@@ -6,7 +6,8 @@
   align-items: center;
   padding: 50px 0;
   margin-bottom: 30px;
-  border-bottom: solid 1px $brown-light;
+  border-bottom: solid 1px $border;
+  background-color: $subtle;
 }
 
 .title, .description {
@@ -15,4 +16,5 @@
 
 .description {
   margin-top: 15px;
+  color: $light;
 }
