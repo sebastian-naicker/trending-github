@@ -57,21 +57,23 @@ const Developers: React.FC = () => {
                       </p>
                     </div>
                   </div>
-                  <div className={styles['list-item-repo']}>
-                    <span className={cx(styles['repo-info'], styles['repo-title'])}>
-                      <PopularIcon className="icon icon__popular" />
-                      Popular Repo
-                    </span>
-                    <span className={cx(styles['repo-info'], styles['repo-name'])}>
-                      <RepoIcon className="icon icon__repo" />
-                      <a href={item.popularRepository.url} className={styles['repo-link']}>
-                        {item.popularRepository.repositoryName}
-                      </a>
-                    </span>
-                    <span className={cx(styles['repo-info'], styles['repo-description'])}>
-                      {item.popularRepository.description}
-                    </span>
-                  </div>
+                  {item.popularRepository.repositoryName && (
+                    <div className={styles['list-item-repo']}>
+                      <span className={cx(styles['repo-info'], styles['repo-title'])}>
+                        <PopularIcon className="icon icon__popular" />
+                        Popular Repo
+                      </span>
+                      <span className={cx(styles['repo-info'], styles['repo-name'])}>
+                        <RepoIcon className="icon icon__repo" />
+                        <a href={item.popularRepository.url} className={styles['repo-link']}>
+                          {item.popularRepository.repositoryName}
+                        </a>
+                      </span>
+                      <span className={cx(styles['repo-info'], styles['repo-description'])}>
+                        {item.popularRepository.description}
+                      </span>
+                    </div>
+                  )}
                 </li>
               )
             })}

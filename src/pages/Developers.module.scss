@@ -77,7 +77,7 @@
   display: flex;
   margin: 0 15px;
   flex-basis: 40%;
-  max-width: 280px;
+  width: 280px;
 }
 
 .avatar {
@@ -97,7 +97,6 @@
 .user-info {
   display: flex;
   flex-direction: column;
-  flex-basis: 35%;
 
   &__name, &__username {
     margin: 0;
