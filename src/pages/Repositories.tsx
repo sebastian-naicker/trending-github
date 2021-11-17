@@ -51,9 +51,11 @@ const Repositories: React.FC = () => {
                   <p className={styles['repo-description']}>{item.description}</p>
                   <div className={styles['repo-meta']}>
                     <div className={styles['repo-meta']}>
-                      <span className={styles['repo-programming-language']} style={{ color: item.languageColor }}>
-                        {item.language}
-                      </span>
+                      {item.language && (
+                        <span className={styles['repo-programming-language']} style={{ color: item.languageColor }}>
+                          {item.language}
+                        </span>
+                      )}
                       <a href={`${item.url}/stargazers`} className={styles['repo-stargazers-link']}>
                         <StarsIcon className="icon icon__star" /> {item.totalStars}
                       </a>

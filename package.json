@@ -34,12 +34,14 @@
     "prettier": "^2.4.1",
     "supertest": "^6.1.6",
     "yarn-run-all": "^3.1.1",
-    "ts-node": "^10.4.0"
+    "ts-node": "^10.4.0",
+    "cross-env": "^7.0.3"
   },
   "scripts": {
     "start": "npm-run-all --parallel start-server start-app",
     "start-server": "npx ts-node ./server/index.ts",
     "start-app": "craco start",
+    "start-with-mock-data": "cross-env MOCK_SERVER_ENABLED=true npm start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
