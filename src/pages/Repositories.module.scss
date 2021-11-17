@@ -1,0 +1,155 @@
+@import "src/scss/_colours";
+
+.repositories {
+  margin: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 1012px;
+}
+
+.table-header {
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
+  background-color: $subtle;
+  border: solid 1px $border;
+  border-bottom: 0;
+}
+
+.table-body {
+  border: solid 1px $border;
+  border-radius: 0 0 8px 8px;
+}
+
+.subnav-button {
+  display: inline-block;
+  align-items: center;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $white;
+  border-radius: 6px;
+  line-height: 20px;
+  border: solid 1px $border;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:first-of-type {
+    border-radius: 6px 0 0 6px;
+  }
+
+  &:last-of-type {
+    border-radius: 0 6px 6px 0;
+  }
+}
+
+.subnav-active {
+  background-color: $accent-emphasis;
+  border: 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  padding: 15px;
+  border-bottom: solid 1px $border;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+.list-item-rank {
+  font-size: 12px;
+  color: $light;
+}
+
+.list-item-user {
+  display: flex;
+  margin: 0 15px;
+  flex-basis: 40%;
+  max-width: 280px;
+}
+
+.avatar {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+
+  &__name, &__username {
+    margin: 0;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+  }
+
+  &__username > a {
+    color: $light !important;
+    font-weight: 600 !important;
+  }
+
+  &__username:hover > a {
+    color: $accent !important;
+  }
+}
+
+.list-item-repo {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+}
+
+.repo-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.repo-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $light;
+}
+
+.repo-description {
+  font-size: 12px;
+  color: $light;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 5px;
+
+  &__popular {
+    fill: $accent-alt;
+  }
+
+  &__repo {
+    fill: $light;
+  }
+}

@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import Developers from '@pages/Developers'
 import Repositories from '@pages/Repositories'
 import reportWebVitals from './reportWebVitals'
+import { ReactQueryDevtools } from 'react-query/devtools'
 
 import './index.scss'
 import Layout from '@components/Layout/Layout'
@@ -22,6 +23,7 @@ ReactDOM.render(
         </Switch>
       </Router>
     </Layout>
+    <ReactQueryDevtools initialIsOpen={false} />
   </QueryClientProvider>,
   document.getElementById('root')
 )
