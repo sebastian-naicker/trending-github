@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import Wrapper from '../../test/test-utils'
+import Wrapper from '../../../test/test-utils'
 import Developers from './Developers'
 
 describe('Developers', function () {

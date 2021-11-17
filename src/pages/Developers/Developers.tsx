@@ -1,9 +1,9 @@
 import React from 'react'
 import cx from 'classnames'
 import { NavLink } from 'react-router-dom'
-import useFetchDevelopers from '../hooks/useFetchDevelopers'
-import { ReactComponent as PopularIcon } from './popular.svg'
-import { ReactComponent as RepoIcon } from './repo.svg'
+import useFetchDevelopers from '../../hooks/useFetchDevelopers'
+import { ReactComponent as RepoIcon } from '../../icons/repo.svg'
+import { ReactComponent as PopularIcon } from '../../icons/popular.svg'
 
 import styles from './Developers.module.scss'
 

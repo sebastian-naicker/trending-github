@@ -1,10 +1,11 @@
 import React from 'react'
-import styles from './Repositories.module.scss'
 import { NavLink } from 'react-router-dom'
-import useFetchRepositories from '../hooks/useFetchRepositories'
-import { ReactComponent as RepoIcon } from './repo.svg'
-import { ReactComponent as StarsIcon } from './stars.svg'
-import { ReactComponent as ForkIcon } from './fork.svg'
+import useFetchRepositories from '../../hooks/useFetchRepositories'
+import { ReactComponent as RepoIcon } from '../../icons/repo.svg'
+import { ReactComponent as StarsIcon } from '../../icons/stars.svg'
+import { ReactComponent as ForkIcon } from '../../icons/fork.svg'
+
+import styles from './Repositories.module.scss'
 
 const Repositories: React.FC = () => {
   const { isLoading, error, data } = useFetchRepositories()
