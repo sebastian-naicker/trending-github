@@ -60,6 +60,7 @@
 
 .list-item {
   display: flex;
+  flex-direction: column;
   padding: 15px;
   border-bottom: solid 1px $border;
 
@@ -68,25 +69,62 @@
   }
 }
 
-.list-item-rank {
-  font-size: 12px;
+.repo-link {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.repo-link-content {
+  margin-left: 5px;
+}
+
+.repo-link-username {
+  font-weight: 400;
+}
+
+.repo-description {
+  margin: 5px 0;
+  color: $light;
+  font-size: 14px;
+}
+
+.repo-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.repo-meta > * {
+  font-size: 12px !important;
+  margin-right: 20px;
+}
+
+.repo-stargazers-link,
+.repo-fork-link {
+  display: flex;
+  align-items: center;
+  color: $light !important;
+}
+
+.repo-built-by {
+  display: flex;
+  align-items: center;
   color: $light;
 }
 
-.list-item-user {
+.built-by-list {
   display: flex;
-  margin: 0 15px;
-  flex-basis: 40%;
-  max-width: 280px;
+  margin-left: 5px;
 }
 
-.avatar {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
+.built-by-avatar {
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 15px;
+  display: inline-block;
 
   & > img {
     width: 100%;
@@ -94,62 +132,6 @@
   }
 }
 
-.user-info {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 35%;
-
-  &__name, &__username {
-    margin: 0;
-  }
-
-  &__name {
-    margin-bottom: 5px;
-  }
-
-  &__username > a {
-    color: $light !important;
-    font-weight: 600 !important;
-  }
-
-  &__username:hover > a {
-    color: $accent !important;
-  }
-}
-
-.list-item-repo {
-  display: flex;
-  flex-direction: column;
-  max-width: 280px;
-}
-
-.repo-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.repo-title {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 300;
-  color: $light;
-}
-
-.repo-description {
-  font-size: 12px;
-  color: $light;
-}
-
-.icon {
-  display: inline-block;
-  margin-right: 5px;
-
-  &__popular {
-    fill: $accent-alt;
-  }
-
-  &__repo {
-    fill: $light;
-  }
+.repo-stars-since {
+  margin-right: 0;
 }

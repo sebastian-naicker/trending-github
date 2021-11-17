@@ -59,11 +59,11 @@ const Developers: React.FC = () => {
                   </div>
                   <div className={styles['list-item-repo']}>
                     <span className={cx(styles['repo-info'], styles['repo-title'])}>
-                      <PopularIcon className={cx(styles['icon'], styles['icon__popular'])} />
+                      <PopularIcon className="icon icon__popular" />
                       Popular Repo
                     </span>
                     <span className={cx(styles['repo-info'], styles['repo-name'])}>
-                      <RepoIcon className={cx(styles['icon'], styles['icon__repo'])} />
+                      <RepoIcon className="icon icon__repo" />
                       <a href={item.popularRepository.url} className={styles['repo-link']}>
                         {item.popularRepository.repositoryName}
                       </a>

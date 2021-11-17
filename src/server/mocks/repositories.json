@@ -15,7 +15,7 @@
       {
         "username": "builtbytestuser1",
         "url": "https://example.com/builtbytestuser1",
-        "avatar": "https://example.com/builtbytestuser1/avatar"
+        "avatar": "https://avatars.githubusercontent.com/u/4704023?v=4r"
       }
     ]
   },
@@ -35,7 +35,7 @@
       {
         "username": "builtbytestuser2",
         "url": "https://example.com/builtbytestuser2",
-        "avatar": "https://example.com/builtbytestuser2/avatar"
+        "avatar": "https://avatars.githubusercontent.com/u/4704023?v=4"
       }
     ]
   }

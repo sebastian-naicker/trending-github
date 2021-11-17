@@ -22,3 +22,16 @@ a {
     text-decoration: underline;
   }
 }
+
+.icon {
+  display: inline-block;
+  margin-right: 5px;
+
+  &__popular {
+    fill: $accent-alt;
+  }
+
+  &__repo, &__fork, &__star {
+    fill: $light;
+  }
+}
