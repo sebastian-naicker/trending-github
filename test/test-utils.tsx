@@ -7,8 +7,8 @@ type Props = {
 
 const queryClient = new QueryClient()
 
-const Wrapper: React.FC<Props> = ({ children }) => (
+const QueryWrapper: React.FC<Props> = ({ children }) => (
   <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
 )
 
-export default Wrapper
+export default QueryWrapper

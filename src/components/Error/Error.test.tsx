@@ -7,7 +7,7 @@ describe('Loading', function () {
   })
 
   it('should contain an error message', function () {
-    const { getByText } = render(<Error error="error occurred" />)
-    expect(getByText('error occurred')).toBeInTheDocument()
+    const { getByText } = render(<Error error="500" />)
+    expect(getByText('An Error Occurred 500')).toBeInTheDocument()
   })
 })
