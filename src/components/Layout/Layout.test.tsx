@@ -12,11 +12,13 @@ describe('Layout', function () {
   })
 
   it('should render content', function () {
-    const { getByText } = render(
+    const { getByText, getByTestId } = render(
       <Layout>
         <span>test content</span>
       </Layout>
     )
+
     expect(getByText('test content')).toBeInTheDocument()
+    expect(getByTestId('layout-content')).toBeInTheDocument()
   })
 })

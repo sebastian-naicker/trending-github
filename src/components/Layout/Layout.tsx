@@ -11,7 +11,7 @@ const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className={styles['layout']}>
       <Header />
-      <div>{children}</div>
+      <div data-testid="layout-content">{children}</div>
     </div>
   )
 }
