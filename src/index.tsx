@@ -3,13 +3,13 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import ReactDOM from 'react-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
-import Developers from '@pages/Developers/Developers'
-import Repositories from '@pages/Repositories/Repositories'
+import Developers from './pages/Developers/Developers'
+import Repositories from './pages/Repositories/Repositories'
 import reportWebVitals from './reportWebVitals'
+import Layout from './components/Layout/Layout'
 import { ReactQueryDevtools } from 'react-query/devtools'
 
 import './index.scss'
-import Layout from '@components/Layout/Layout'
 
 const queryClient = new QueryClient()
 
