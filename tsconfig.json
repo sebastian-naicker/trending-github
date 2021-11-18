@@ -26,5 +26,6 @@
   ],
   "exclude": [
     "src/server"
-  ]
+  ],
+  "typeRoots": ["./types"]
 }

@@ -10,4 +10,26 @@ describe('Repositories', function () {
       </QueryWrapper>
     )
   })
+
+  it('should render loading component while loading', function () {
+    const { getByTestId, queryByTestId } = render(
+      <QueryWrapper>
+        <Repositories />
+      </QueryWrapper>
+    )
+
+    expect(getByTestId('loading')).toBeInTheDocument()
+    expect(queryByTestId('error')).not.toBeInTheDocument()
+    expect(queryByTestId('developers-page')).not.toBeInTheDocument()
+  })
+
+  it('should match snapshot', function () {
+    const { asFragment } = render(
+      <QueryWrapper>
+        <Repositories />
+      </QueryWrapper>
+    )
+
+    expect(asFragment).toMatchSnapshot()
+  })
 })

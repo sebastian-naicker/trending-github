@@ -8,7 +8,7 @@ type Props = {
 
 const Loading: React.FC<Props> = ({ content }) => {
   return (
-    <div className={styles['loading']}>
+    <div data-testid="loading" className={styles['loading']}>
       <div className={styles['loading-content']}>
         <div data-testid="loading-spinner" className="loadingio-spinner-rolling-bv1vv26je5">
           <div className="ldio-lin2e3un6c">

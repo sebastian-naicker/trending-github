@@ -21,7 +21,7 @@ const Developers: React.FC = () => {
 
   // @ts-ignore
   return (
-    <div className={styles['developers']}>
+    <div data-testid="developers-page" className={styles['developers']}>
       <Table>
         {data.map((item: any) => {
           return (
