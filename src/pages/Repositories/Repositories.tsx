@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import useFetchRepositories from '../../hooks/useFetchRepositories'
+import Loading from '../../components/Loading/Loading'
 import { ReactComponent as RepoIcon } from '../../icons/repo.svg'
 import { ReactComponent as StarsIcon } from '../../icons/stars.svg'
 import { ReactComponent as ForkIcon } from '../../icons/fork.svg'
@@ -10,7 +11,7 @@ import styles from './Repositories.module.scss'
 const Repositories: React.FC = () => {
   const { isLoading, error, data } = useFetchRepositories()
 
-  if (isLoading) return <span>Loading...</span>
+  if (isLoading) return <Loading content="Hang on... We're busy fetching you the most popular repositories! 🔥" />
 
   if (error) {
     // @ts-ignore

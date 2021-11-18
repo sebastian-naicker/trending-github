@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import cx from 'classnames'
 import { NavLink } from 'react-router-dom'
+import Loading from '../../components/Loading/Loading'
 import useFetchDevelopers from '../../hooks/useFetchDevelopers'
 import { ReactComponent as RepoIcon } from '../../icons/repo.svg'
 import { ReactComponent as PopularIcon } from '../../icons/popular.svg'
@@ -10,7 +11,11 @@ import styles from './Developers.module.scss'
 const Developers: React.FC = () => {
   const { isLoading, error, data } = useFetchDevelopers()
 
-  if (isLoading) return <span>Loading...</span>
+  useEffect(() => {
+    console.log(data)
+  }, [])
+
+  if (isLoading) return <Loading content="Hang on... We're busy fetching you the most popular developers! 🔥" />
 
   if (error) {
     // @ts-ignore

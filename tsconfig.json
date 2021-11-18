@@ -26,5 +26,10 @@
   ],
   "exclude": [
     "src/server"
+  ],
+  "typeRoots": [
+    "./node_modules/@types",
+    "./types",
+    "./server/types"
   ]
 }
