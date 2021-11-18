@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import useFetchRepositories from '../../hooks/useFetchRepositories'
 import Loading from '../../components/Loading/Loading'
+import Error from '../../components/Error/Error'
 import { ReactComponent as RepoIcon } from '../../icons/repo.svg'
 import { ReactComponent as StarsIcon } from '../../icons/stars.svg'
 import { ReactComponent as ForkIcon } from '../../icons/fork.svg'
@@ -15,7 +16,7 @@ const Repositories: React.FC = () => {
 
   if (error) {
     // @ts-ignore
-    return <div>An error has occurred + {error.message}</div>
+    return <Error error={error.message} />
   }
 
   return (
