@@ -4,3 +4,4 @@
 // learn more: https://github.com/testing-library/jest-dom
 /* istanbul ignore file */
 import '@testing-library/jest-dom'
+import 'jest-fetch-mock'
