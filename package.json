@@ -49,7 +49,10 @@
     "start-with-mock-data": "cross-env MOCK_SERVER_ENABLED=true npm start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress": "npm-run-all start-with-mock-data cypress:run"
   },
   "eslintConfig": {
     "extends": [
