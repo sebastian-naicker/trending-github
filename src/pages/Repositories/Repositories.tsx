@@ -20,7 +20,7 @@ const Repositories: React.FC = () => {
   }
 
   return (
-    <div className={styles['repositories']}>
+    <div data-testid="repositories-page" className={styles['repositories']}>
       <Table>
         {data.map((item: any) => {
           return (
