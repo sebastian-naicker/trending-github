@@ -10,6 +10,7 @@ This app is built with the following technologies:
  - Cypress - For automated E2E testing
  - Github Actions for CI/CD pipelines
  - Prettier for linting
+ - BFF - Which is by no means anywhere near a production ready BFF, but I felt it was important to demonstrate an understanding of modern architecture on the FE.
 
 ## Getting Started
 
