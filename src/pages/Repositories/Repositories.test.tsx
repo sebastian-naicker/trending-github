@@ -23,7 +23,7 @@ describe('Repositories', function () {
 
     expect(getByTestId('loading')).toBeInTheDocument()
     expect(queryByTestId('error')).not.toBeInTheDocument()
-    expect(queryByTestId('developers-page')).not.toBeInTheDocument()
+    expect(queryByTestId('repositories-page')).not.toBeInTheDocument()
   })
 
   it('should render error when api loading fails', function () {
